@@ -1,0 +1,396 @@
+@font-face{
+	font-family: lol;
+	src: url("../fonts/NEOTRIC-REGULAR.ttf");
+}
+
+@font-face{
+	font-family: gyaaa;
+	src: url("../fonts/AURORA.ttf");
+}
+
+@font-face{
+	font-family: meh;
+	src: url("../fonts/MontserratLight.ttf");
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: Black;
+  color: white;
+}
+
+#header{
+    float: right;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    background-color: black;
+}
+
+#navigation{ 
+	float: right;
+	display: inline-block;
+}
+
+#navigation ul{
+	margin: 0;
+}
+
+#navigation ul a{
+	font-family: lol;
+	font-size: 15px;
+	color: #FFF;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.link {
+	display: inline-block;
+	padding: 15px 20px;
+	transition: background-color .2s ease;
+	background-color: transparent;
+}
+
+#home:hover{
+	background-color: #ff0060;
+}
+#profile:hover{
+	background-color: #4682B4;
+}
+#projects:hover{
+	background-color: #BC8F8F;
+}
+#skills:hover{
+	background-color: #2E8B57;
+}
+#contact:hover{
+	background-color: #FF7F50;
+}
+
+
+* {margin: 0; padding: 0;}
+
+
+
+/*==========slider rules==========*/
+.slider{
+  width: 100%;
+  
+  position: relative;
+  padding-top: 320px;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+
+.slider>img{
+  position: absolute;
+  left: 0; top: 0;
+  transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+}
+
+.slider input[name='slide_switch'] {
+  display: none;
+}
+
+.slider label {
+  
+  margin: 18px 0 0 18px;
+  border: 3px solid #999;
+  display: none;
+  float: left;
+  cursor: pointer;
+  transition: all 0.5s;
+  opacity: 0.6;
+}
+
+.slider label img{
+  display: block;
+}
+
+.slider input[name='slide_switch']:checked+label {
+  border-color: #666;
+  opacity: 1;
+}
+
+.slider input[name='slide_switch'] ~ img {
+  opacity: 0;
+  /*transform: scale(1.1);*/
+}
+
+.slider input[name='slide_switch']:checked+label+img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#text{
+	margin-top: 0 auto;
+    width: 100%;
+}
+
+#main{
+	padding: 0;
+	margin:  0;
+	font-family: gyaaa;
+	color: white;
+	font-size: 10vw;
+	text-shadow: 4px 4px 5px #211f19;
+	letter-spacing: 0.2em;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 30vw;
+	position: relative;
+	z-index: 99;
+	margin-left: 8%;
+}
+
+
+
+
+
+/*==========profile rules==========*/
+#profilebg{
+	background-color: #4682B4;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 !important;
+  width: 80%;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
+  text-align: center;
+}
+
+.banner{
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
+.profile{
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: -120px auto 0 auto;
+  border-radius: 100px;
+  border: 4px solid #fff;
+}
+
+.name {
+  margin-top: 20px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18pt;
+  color: #777;
+}
+
+.info {
+  margin-top: -5px;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11pt;
+  color: #aaa;
+}
+
+.desc {
+  text-align: center;
+  margin-top: 25px;
+  margin: 25px 40px;
+  color: #999;
+  font-size: 11pt;
+  font-family: "Open Sans";
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed;
+}
+
+/*==========gallery rules==========*/
+#spacer{
+	padding-top: 25%;
+}
+
+.slider2{
+  width: 60%;
+  height: 15em;
+  position: relative;
+  padding-top: 15%;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider2>img{
+  position: absolute;
+  left: 0; top: 0;
+  transition: all 1s;
+  width: 100%;
+  height: 100%;
+}
+
+.slider2 input[name='slide_switch'] {
+  display: none;
+}
+
+.slider2 label {
+  margin: 2% 0 0 2%;
+  border: 3px solid #999;
+  float: left;
+  cursor: pointer;
+  transition: all 0.5s;
+  opacity: 0.6;
+  width: 17%;
+  display: none;
+}
+
+.slider2 label img{
+  width: 100%;
+  height: 5em;
+  margin: 0 auto;
+  padding: 0;
+  display: none;
+}
+
+.slider2 input[name='slide_switch']:checked+label {
+  border-color: #666;
+  opacity: 1;
+
+}
+
+.slider2 input[name='slide_switch'] ~ img {
+  opacity: 0;
+  //transform: scale(1.1);
+}
+
+.slider2 input[name='slide_switch']:checked+label+img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*==========Project Rules==========*/
+#projectsbg{
+	background-color: #BC8F8F;
+}
+
+#section2{
+	display: flex;
+	width: 86%;
+	margin-right: 7%;
+	margin-left: 7%;
+	border-bottom:2px solid black;
+	background-color: white;
+}
+
+#section2 #pos img{
+	display: block;
+	width: 40%;
+	height: auto;
+	margin: 5% auto 5% auto;
+}
+
+#section2 #pos{
+	flex: 33.33%;
+	margin: 1%;
+}
+
+#section2 #info{
+	flex: 66.66%;
+	margin: 25px;
+}
+
+#section2 #info h1{
+	font-family: Times new Roman;
+	font-size: 2vw;
+	color: #BC8F8F;
+}
+
+#section2 #info p{
+	font-family: Times new Roman;
+	font-size: 1vw;
+	color: #BC8F8F;
+}
+
+#link{
+	background-color: #BC8F8F;
+    color: white;
+    padding: 2% 4%;
+    margin: 1%;
+    border: none;
+    width: 20%;
+	font-size: 1vw;
+	margin-top: 5%;
+}
+
+#link a{
+	text-decoration: none;
+	color: white;
+	padding: 10% 10%;
+    cursor: pointer;
+}
+
+/*==========Skills Rules==========*/
+#skillsbg{
+	background-color: #2E8B57;
+}
+
+#section3{
+	display: flex;
+	width: 86%;
+	margin-right: 7%;
+	margin-left: 7%;
+	border-bottom:2px solid black;
+	background-color: white;
+}
+
+#section3 #pos img{
+	display: block;
+	width: 40%;
+	height: auto;
+	margin: 5% auto 5% auto;
+}
+
+#section3 #pos{
+	flex: 33.33%;
+	margin: 1%;
+}
+
+#section3 #info{
+	flex: 66.66%;
+	margin: 25px;
+}
+
+#section3 #info h1{
+	font-family: Times new Roman;
+	font-size: 2vw;
+	color: #2E8B57;
+}
+
+#section3 #info p{
+	font-family: Times new Roman;
+	font-size: 1vw;
+	color: #2E8B57;
+}
+
+/*==========Contact Rules==========*/
+#contactsbg{
+	background-color: #FF7F50;
+}
+
+.sm img{
+	width: 65px;
+  	height: 60px;
+  	margin: 0 auto;
+  	border-radius: 100px;
+  	border: 4px solid #fff;
+  	position: relative;
+}
+.sm{
+	text-decoration: none;
+	list-style: none;
+	display: inline-flex;
+}
+
+.socials{
+	margin: 0 auto;
+}
